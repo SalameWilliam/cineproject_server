@@ -29,7 +29,7 @@ router.post('/newsletter', function (req, res) {
 
     smtpTransport.sendMail({  //email options
       from: "cineproject.serveur@gmail.com",
-      to: "willsalame@gmail.com", // receiver
+      to: "info@cineproject.be", // receiver
       subject: "Nouvel abonnement à la newsletter", // subject
       text: "Email : " + body.email
     }, function(error, response){  //callback
@@ -52,7 +52,7 @@ router.post('/message', function (req, res) {
 
     smtpTransport.sendMail({  //email options
         from: "cineproject.serveur@gmail.com",
-        to: "willsalame@gmail.com", // receiver
+        to: "info@cineproject.be", // receiver
         subject: "Message utilisateur cinéproject.be", // subject
         text: "Nom : " + body.name + "\nEmail : " + body.email + "\nMessage : " + body.message // body (var data which we've declared)
     }, function(error, response){  //callback
