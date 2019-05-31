@@ -1,0 +1,89 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[2] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title Nos projets p&eacute;dagogiques
+                            p Transmettre le cin&eacute;ma
+    // /#page-breadcrumb
+    section#company-information.choose
+        .container
+            .row
+                .col-sm-6.padding-top.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='0ms')
+                    h2 Que nous raconte l&apos;image ?
+                    p
+                        | &Ecirc;tre &agrave; l&rsquo;&eacute;coute des spectateurs, c&rsquo;est s&rsquo;attarder sur ce qu&rsquo;ils regardent. Analyser avec eux les films et/ou les s&eacute;ries qu&rsquo;ils appr&eacute;cient. Les mettre en parall&egrave;le avec d&rsquo;autres &oelig;uvres moins accessibles qui traitent des m&ecirc;mes th&egrave;mes. Utiliser nos connaissances sp&eacute;cialis&eacute;es pour enrichir les leurs sans jamais les d&eacute;valoriser. Insister, par l&rsquo;analyse de films, sur l&rsquo;importance de la signification. Qu&rsquo;est-ce qui se cache derri&egrave;re une image et un son? Que veut-on nous faire croire, nous faire dire, nous faire faire, etc. ?
+                .col-sm-6.padding-top.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='0ms')
+                    h2 Notre d&eacute;marche
+                    p
+                        | Le cin&eacute;ma est plus que jamais un objet de consommation populaire. Il est devenu n&eacute;cessaire d&rsquo;&eacute;veiller notre sens critique face &agrave; ces images cin&eacute;matographiques vectrices d&rsquo;id&eacute;ologies en tout genre.
+                    p
+                        | C&rsquo;est dans cette optique que nous d&eacute;sirons proposer une p&eacute;dagogie sur le cin&eacute;ma et non pas par le cin&eacute;ma.
+    section#home-slider
+        .container
+            .row
+                .main-slider
+                    .slide-text
+                        h2 En clair, de quoi on veut parler ?
+                        p
+                            | Au travers de nos box, nos ateliers, nos stages, nos formations et en privil&eacute;giant une filmographie tr&egrave;s diversifi&eacute;e - du dernier Avengers &agrave; Citizen Kane, en passant par Wes Anderson et bien d&rsquo;autres - voici ce que vous d&eacute;couvrirez :
+                        ul.elements
+                            li.wow.fadeInUp(data-wow-duration='900ms' data-wow-delay='100ms')
+                                i.fa.fa-angle-right
+                                |  La repr&eacute;sentation au cin&eacute;ma : le plan, le cadrage, le montage, etc.
+                            li.wow.fadeInUp(data-wow-duration='800ms' data-wow-delay='200ms')
+                                i.fa.fa-angle-right
+                                |  La ph&eacute;nom&eacute;nologie du cin&eacute;ma &amp; cin&eacute;ma des attractions : comment le cin&eacute;ma capte l&rsquo;attention du spectateur ?
+                            li.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='300ms')
+                                i.fa.fa-angle-right
+                                |  D&eacute;velopper un sens critique face &agrave; l&rsquo;image cin&eacute;matographique : m&eacute;taphore, esth&eacute;tisation, romantisation, rapport &agrave; l&rsquo;empathie, etc.
+                            li.wow.fadeInUp(data-wow-duration='600ms' data-wow-delay='400ms')
+                                i.fa.fa-angle-right
+                                |  Cours g&eacute;n&eacute;raux : Analyse de films, initiation au cin&eacute;ma, etc.
+                    img.slider-hill(src='/images/home/gif-cineproject.gif' alt='slider image' width='55%')
+        .preloader
+            i.fa.fa-sun-o.fa-spin
+    section#related-work.padding-top.padding-bottom
+        .container
+            .row
+                h1.title.text-center Vous &ecirc;tes plut&ocirc;t quoi ?
+                .col-sm-3
+                    .portfolio-wrapper
+                        .portfolio-single
+                            a(href='colloque.html')
+                                .portfolio-thumb
+                                    img(src='https://img.icons8.com/doodle/480/000000/read.png')
+                        .portfolio-info
+                            h2 Colloque / Masterclass
+                .col-sm-3
+                    .portfolio-wrapper
+                        .portfolio-single
+                            a(href='stage.html')
+                                .portfolio-thumb
+                                    img(src='https://img.icons8.com/doodle/480/000000/brick.png')
+                        .portfolio-info
+                            h2 Stages
+                .col-sm-3
+                    .portfolio-wrapper
+                        .portfolio-single
+                            a(href='formation.html')
+                                .portfolio-thumb
+                                    img(src='https://img.icons8.com/doodle/480/000000/movie-projector.png')
+                        .portfolio-info
+                            h2 Formations
+                .col-sm-3
+                    .portfolio-wrapper
+                        .portfolio-single
+                            a(href='box.html')
+                                .portfolio-thumb
+                                    img(src='https://img.icons8.com/doodle/480/000000/empty-box.png')
+                        .portfolio-info
+                            h2 Box virtuelle
+    // /#related-work

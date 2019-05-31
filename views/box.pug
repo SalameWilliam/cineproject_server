@@ -1,0 +1,170 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[2] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title Cin&amp;Savoir - Nos Boxs P&eacute;dagogiques
+                            p A destination des enseignants, animateurs et passionn&eacute;s !
+    // /#page-breadcrumb
+    section#portfolio-information.padding-top
+        .container
+            .row
+                .col-sm-6
+                    .project-info.overflow
+                        h2 Comment devenir acteur de l&apos;image ?
+                        h3 Notre point de d&eacute;part
+                        p
+                            | Les repr&eacute;sentations que les m&eacute;dias v&eacute;hiculent impactent notre soci&eacute;t&eacute; car elles construisent notre imaginaire collectif. Celles-ci mod&egrave;lent nos comportements et peuvent donner lieu &agrave; la formation de pr&eacute;jug&eacute;s socialement nocifs.
+                        p
+                            | De plus en plus t&ocirc;t, les plus jeunes font face &agrave; nombreuses images auxquelles ils ne sont pas acteurs, n&apos;ayant pas les outils pour les analyser et les comprendre.
+                        p
+                            | Comment vivent-ils l&apos;image ? Comment celle-ci les impacte ? &Agrave; l&apos;heure actuelle, tout le monde &agrave; une &laquo; image &raquo; en poche, presque tous les jeunes s&apos;expriment au travers de celle-ci.
+                        p
+                            | Si &agrave; cause d&apos;un film, d&apos;une publicit&eacute;, d&apos;un buzz, toute une population d&apos;adolescents change compl&egrave;tement son comportement, alors quel est le danger des st&eacute;r&eacute;otypes sur eux ?
+                        p
+                            | Nous pensons que l&apos;&eacute;ducation est une cl&eacute; pour devenir acteur de l&apos;image et cr&eacute;er cette distance avec toutes ces repr&eacute;sentations.
+                        h3 Notre but
+                        p
+                            | Selon nous, le cin&eacute;ma est une base pour d&eacute;crypter l&apos;image en g&eacute;n&eacute;ral. Nous d&eacute;veloppons des boxs pour fournir, aux acteurs p&eacute;dagogiques du secteur culturel, un outil complet et polyvalent d&rsquo;&eacute;ducation &agrave; l&rsquo;image qui leur permettra d&rsquo;aborder le septi&egrave;me art sous diff&eacute;rents angles.
+                        p
+                            | Nous proposons non pas une p&eacute;dagogie PAR le cin&eacute;ma, mais bien une p&eacute;dagogie DU cin&eacute;ma qui permettra aux &eacute;tudiants de d&eacute;velopper un sens critique face &agrave; l&rsquo;image afin de ne pas/plus &ecirc;tre un spectateur passif.
+                            | Nos boxs sont organis&eacute;es par th&egrave;me, mais chacune balaye une analyse esth&eacute;tique et philosophique des films propos&eacute;s ainsi que les aspects th&eacute;matiques et sociologiques.
+                        p
+                            | Quant aux choix des films analys&eacute;s, nous tenons &agrave; ce qu&rsquo;ils soient le plus diversifi&eacute; possible : des blockbusters jusqu&rsquo;au cin&eacute;ma exp&eacute;rimental en passant par le cin&eacute;ma ind&eacute;pendant.
+                        br
+                        br
+                        br
+                .col-sm-6
+                    .skills.overflow
+                        h3 Que contiennent nos Boxs P&eacute;dagogiques ?
+                        ul.elements
+                            li
+                                i.fa.fa-angle-right
+                                |  Une fiche technique o&ugrave; le nombre d&rsquo;heure, la pertinence dans le programme, une table des mati&egrave;res et le contenu seront indiqu&eacute;s
+                            li
+                                i.fa.fa-angle-right
+                                |  Des fiches p&eacute;dagogiques du vocabulaire cin&eacute;matographique : d&eacute;finition des termes techniques avec des exemples pour se familiariser au langage sp&eacute;cifique d&rsquo;analyse cin&eacute;matographique
+                            li
+                                i.fa.fa-angle-right
+                                |  Trois analyses de films : gen&egrave;se, mise en contexte, analyse du sc&eacute;nario et de l&rsquo;esth&eacute;tique, r&eacute;ception spectatorielle &mldr;
+                            li
+                                i.fa.fa-angle-right
+                                |  Un quizz ou jeu interactif &agrave; r&eacute;aliser avec ses &eacute;tudiants
+                            li
+                                i.fa.fa-angle-right
+                                |  Des synth&egrave;ses reprenant tous les &eacute;l&eacute;ments importants
+                            li
+                                i.fa.fa-angle-right
+                                |  Une bibliographie &amp; une filmographie
+                    .skills.overflow
+                        center
+                            img.animated.rubberBand.delay-2s(src='https://img.icons8.com/doodle/300/000000/empty-box.png')
+                        h3 &Agrave; qui s&rsquo;adressent-elles ?
+                        ul.elements
+                            li
+                                i.fa.fa-check-square
+                                | Enseignants dans le secondaire
+                            li
+                                i.fa.fa-check-square
+                                | Animateurs en &eacute;ducation permanente
+                            li
+                                i.fa.fa-check-square
+                                | Passionn&eacute;s et/ou curieux du Cin&eacute;ma
+                        br
+    section#subscribe
+        .container
+            .row
+                .col-sm-6
+                    .project-info.overflow
+                        h2 Comment &ccedil;a marche ?
+                        h3 Choisissez votre/vos th&eacute;matique/s et les diff&eacute;rents modules
+                        p
+                            img(src='https://img.icons8.com/dusk/40/000000/circled-chevron-right.png')
+                            | Chaque module repr&eacute;sente 50 minutes de cours.
+                        p
+                            img(src='https://img.icons8.com/dusk/40/000000/circled-chevron-right.png')
+                            |        Chaque th&eacute;matique se compose de 5 modules.
+                        p
+                            img(src='https://img.icons8.com/dusk/40/000000/circled-chevron-right.png')
+                            |        A ceci peut &ecirc;tre ajout&eacute; un exercice cr&eacute;atif de 150 minutes (3x50 min).
+                        p
+                            | Parce que nous avons conscience de la singularit&eacute; de chaque professeur et de sa classe, nous proposons des boxs qui peuvent &ecirc;tre compos&eacute;es sur mesure.
+                            | Il est possible de d&eacute;structurer les boxs. Nous proposons aux enseignants de choisir les modules qui les int&eacute;ressent afin de construire, avec eux, la proposition la mieux adapt&eacute;e et de cr&eacute;er la box p&eacute;dagogique qui leur conviendra au mieux et s&rsquo;int&eacute;grera aux programmes de fa&ccedil;on pertinente.
+                        p
+                            | Ce fonctionnement est possible, car les diff&eacute;rentes th&eacute;matiques sont intimement li&eacute;es. Nous pouvons facilement inter changer les modules car elles sont unies par un m&ecirc;me fil rouge.
+                    .skills.overflow
+                        p  La composition de nos modules :
+                        ul.elements
+                            li
+                                i.fa.fa-angle-right
+                                | Bases du langage cin&eacute;matographique
+                            li
+                                i.fa.fa-angle-right
+                                | Contextualisation
+                            li
+                                i.fa.fa-angle-right
+                                | Analyse esth&eacute;tique
+                            li
+                                i.fa.fa-angle-right
+                                | Nouvelles images
+                            li
+                                i.fa.fa-angle-right
+                                | Exercice pratique et p&eacute;dagogique
+                    .skills.overflow
+                        p
+                            | Pourquoi 5 modules ? Afin de permettre aux &eacute;tudiants d&apos;avoir tous les outils en main pour analyser l&apos;image eux-m&ecirc;mes. Cela passe par l&apos;&eacute;tude de la base du langage, la contextualisation, l&apos;analyse de la forme et du fond, d&apos;une ouverture vers d&apos;autres m&eacute;dias et enfin un exercice pour s&apos;assurer de la bonne compr&eacute;hension des notions importantes.
+                .col-sm-6
+                    .skills.overflow
+                        p  Nous proposons 5 grandes th&eacute;matiques :
+                        ul.elements
+                            li
+                                i.fa.fa-angle-right
+                                |  Cin&eacute;ma et politique
+                            li
+                                i.fa.fa-angle-right
+                                |  Genre et sexualit&eacute;
+                            li
+                                i.fa.fa-angle-right
+                                |  Repr&eacute;sentations des ethnies et racisme
+                            li
+                                i.fa.fa-angle-right
+                                |  &Eacute;cologie
+                            li
+                                i.fa.fa-angle-right
+                                |  Cin&eacute;ma des attractions
+                        p
+                            | La &laquo; box &raquo; p&eacute;dagogique peut &ecirc;tre imagin&eacute;e comme une &laquo; bo&icirc;te &agrave; savoir &raquo; dans laquelle l&rsquo;enseignant.e peut placer diff&eacute;rents modules (issus de th&eacute;matiques diff&eacute;rentes) et/ou ne choisir que certains modules d&rsquo;une m&ecirc;me th&eacute;matique.
+                        p
+                            | Il est aussi possible de choisir entre diff&eacute;rentes listes de films en fonction des affinit&eacute;s de chacun. Vous pr&eacute;f&eacute;rez les films de genre, les drames ou les policiers ? Ne vous inqui&eacute;tez pas, on a tout ce qu&apos;il vous faut !
+                        p
+                            | En cin&eacute;ma, le fond et la forme sont indissociables, ils sont interd&eacute;pendants et inh&eacute;rents l&rsquo;un &agrave; l&rsquo;autre. Notre p&eacute;dagogie vise &agrave; fournir les outils n&eacute;cessaires pour appr&eacute;hender la forme (l&rsquo;esth&eacute;tique cin&eacute;matographique &ndash; les modules) afin d&rsquo;avoir une pleine conscience/maitrise et compr&eacute;hension du fond (la th&eacute;matique).
+                    .client.overflow
+                        h3 Pour vous procurer une box, il y a plusieurs possibilit&eacute;s :
+                        ul.elements
+                            li
+                                i.fa.fa-angle-right
+                                |  Se procurer une box sp&eacute;cifique &agrave; exploiter par l&rsquo;enseignant ou l&rsquo;animateur : Vous pouvez choisir une box seule et utiliser le contenu &agrave; votre guise
+                            li
+                                i.fa.fa-angle-right
+                                |  Se procurer une box sp&eacute;cifique &agrave; pr&eacute;senter par les animateurs de Cin&amp;Project : Nous pouvons nous rendre &agrave; votre &eacute;tablissement et d&eacute;finir avec vous un horaire pour enseigner les &eacute;l&eacute;ments de la box &agrave; vos &eacute;l&egrave;ves/&eacute;tudiants
+                            li
+                                i.fa.fa-angle-right
+                                |  Se procurer un ensemble de boxs en vue d&rsquo;un projet p&eacute;dagogique global &agrave; l&rsquo;ann&eacute;e : Nous proposons des animations qui peuvent faire l&rsquo;objet d&rsquo;un projet &agrave; l&rsquo;ann&eacute;e ou trimestriel. Cette option offre la possibilit&eacute; de r&eacute;aliser un court-m&eacute;trage avec les &eacute;tudiants qui leur permettra de mieux assimiler la th&eacute;orie au travers d&rsquo;un exercice pratique de longue dur&eacute;e.
+    section#action.responsive
+        .vertical-center
+            .container
+                .row
+                    .action.take-tour
+                        .col-sm-7.wow.fadeInLeft(data-wow-duration='500ms' data-wow-delay='300ms')
+                            h1.title Vous &ecirc;tes int&eacute;ress&eacute;.e par une box ?
+                            p Aidez vos &eacute;tudiants &agrave; reprendre le contr&ocirc;le sur l&apos;image
+                        .col-sm-5.text-center.wow.fadeInRight(data-wow-duration='500ms' data-wow-delay='300ms')
+                            .tour-button
+                                a.btn.btn-common(href='message.html') Contactez-nous

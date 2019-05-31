@@ -1,0 +1,207 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[2] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title D&eacute;couvrez nos colloques et masterclasses
+                            p A destination des plus petits et des plus grands
+    // /#action
+    section#home-slider.padding.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='300ms')
+        .container
+            .row
+                .col-sm-6
+                    h2 Conf&eacute;rence et atelier &agrave; HEPH-Condorcet
+                    img.img-responsive(src='/images/home/heph.PNG' alt='')
+                .col-sm-6.padding-top
+                    p
+                        | Conf&eacute;rence dans le cadre de l&rsquo;&eacute;v&eacute;nement &laquo; Cr&eacute;ation/&Eacute;dition/Monstration &raquo; organis&eacute; par la section d&rsquo;Arts Appliqu&eacute;s de l&rsquo;&eacute;cole HEPH-Condorcet.
+                        | Cin&amp;Project a eu le plaisir d&rsquo;avoir carte blanche pour l&rsquo;organisation d&rsquo;une journ&eacute;e d&rsquo;initiation au cin&eacute;ma avec les &eacute;l&egrave;ves.
+                    p
+                        | D&eacute;couvrez le
+                        a(href='/images/home/Cin&Project_2018_Condorcet_Mons_Edition_Création_Monstration.pdf' target='_blank') programme
+                        |  de cet &eacute;v&eacute;nement et l&rsquo;intervention de Cin&amp;Project
+        .preloader
+            i.fa.fa-sun-o.fa-spin
+    section#shortcodes
+        .container
+            hr
+            section#company-information.choose
+                .container
+                    .row
+                        .col-sm-6.padding-top.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='0ms')
+                            h2 Colloque Corps &amp; Cin&eacute;ma
+                            p
+                                | Le colloque s&rsquo;est articul&eacute; autour de la figure du corps meurtri dans le cin&eacute;ma de Jean-Pierre et Luc Dardenne. Il a combin&eacute; des conf&eacute;rences dispens&eacute;es par des sp&eacute;cialistes de l&rsquo;&oelig;uvre des fr&egrave;res Dardenne, d&rsquo;anciens &eacute;tudiants en &eacute;criture et analyse cin&eacute;matographiques de l&rsquo;ULB, ainsi que des masterclasses avec des professionnels du monde du cin&eacute;ma belge.
+                            p   Parmi les intervenants, nous avons compt&eacute;,  entre autres :
+                            ul.elements
+                                li.wow.fadeInUp(data-wow-duration='900ms' data-wow-delay='100ms')
+                                    i.fa.fa-angle-right
+                                    |  &Eacute;lise Domenach, Ma&icirc;tre de conf&eacute;rence en &eacute;tudes cin&eacute;matographiques;
+                                li.wow.fadeInUp(data-wow-duration='800ms' data-wow-delay='200ms')
+                                    i.fa.fa-angle-right
+                                    |  Rosanna Gangemi, philosophe de l&apos;art, essayiste et journaliste;
+                                li.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='300ms')
+                                    i.fa.fa-angle-right
+                                    |   Lambros Couloubaritsis, philosophe et professeur &agrave; l&apos;ULB;
+                                li.wow.fadeInUp(data-wow-duration='600ms' data-wow-delay='400ms')
+                                    i.fa.fa-angle-right
+                                    |  Damien Keyeux, monteur et professeur &agrave; l&rsquo;ULB.
+                            p
+                                | Les masterclasses ont eu lieu en pr&eacute;sence des cin&eacute;astes :
+                            ul.elements
+                                li.wow.fadeInUp(data-wow-duration='900ms' data-wow-delay='100ms')
+                                    i.fa.fa-angle-right
+                                    |  Luc Dardenne;
+                                li.wow.fadeInUp(data-wow-duration='800ms' data-wow-delay='200ms')
+                                    i.fa.fa-angle-right
+                                    |  Fabrice Du Welz;
+                                li.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='300ms')
+                                    i.fa.fa-angle-right
+                                    |  Joachim Lafosse;
+                                li.wow.fadeInUp(data-wow-duration='600ms' data-wow-delay='400ms')
+                                    i.fa.fa-angle-right
+                                    |  Bernard Bellefroid;
+                                li.wow.fadeInUp(data-wow-duration='500ms' data-wow-delay='500ms')
+                                    i.fa.fa-angle-right
+                                    |  Fien Troch.
+                            p
+                                | Le public a &eacute;galement eu l&rsquo;occasion de visiter une exposition permanente d&rsquo;&oelig;uvres artistiques autour de la th&eacute;matique du corps meurtri.
+                            p
+                                | Vous pouvez t&eacute;l&eacute;charger
+                                a(href='/images/Colloque_Corps.pdf' target='_blank') notre catalogue
+                                |  reprenant les pr&eacute;sentations des conf&eacute;rences et masterclass ainsi que des artistes.
+                        .col-sm-6.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='0ms')
+                            img.img-responsive(src='/images/services/rosetta.png' alt='')
+            // /#company-information
+            #accordion-container
+                h2.page-header Planning des 3 jours
+                #accordion.panel-group
+                    .panel.panel-default
+                        .panel-heading
+                            h4.panel-title
+                                a(data-toggle='collapse' data-parent='#accordion' href='#collapseOne')
+                                    | Jeudi 08 f&eacute;vrier 2018
+                        #collapseOne.panel-collapse.collapse.in
+                            .panel-body
+                                p    18h30 &ndash; 20h30
+                                p
+                                    | Echange entre Luc Dardenne et Lambros Couloubaritsis
+                                p
+                                    | 20h30 &ndash; 22h30
+                                p   Projection de &laquo; La fille inconnue &raquo; (2016) de Luc et Jean-Pierre Dardenne
+                    .panel.panel-default
+                        .panel-heading
+                            h4.panel-title
+                                a(data-toggle='collapse' data-parent='#accordion' href='#collapseTwo')
+                                    | Vendredi 09 f&eacute;vrier 2018
+                        #collapseTwo.panel-collapse.collapse
+                            .panel-body
+                                p   10h00 &ndash; 11h00
+                                p
+                                    | Conf&eacute;rence de Rosanna Gangemi - Po&iuml;&eacute;tique des corps silencieux  : Autour de la vacillation des organes et de l&rsquo;emprise des absents
+                                p
+                                    | Le cin&eacute;ma des Dardenne a &eacute;t&eacute; souvent consid&eacute;r&eacute; comme un cin&eacute;ma des corps et des gestes. Pourtant un autre dynamisme innerve ces films, celui d&eacute;clench&eacute; par les corps absents. Le corpus filmique des Dardenne sera donc explor&eacute; en partant de l&rsquo;id&eacute;e qu&rsquo;au fond de leur logique globale il y a la force po&iuml;&eacute;tique de l&rsquo;irruption dans la narration de nombreuses disparitions insoutenables.
+                                hr
+                                p
+                                    | 11h00 &ndash; 12h00
+                                p
+                                    | Masterclasse avec Fabrizio Rongione - Le corps et l&rsquo;acteur
+                                hr
+                                p
+                                    | 12h00 &ndash; 13h00
+                                p  Lunch
+                                hr
+                                p  13h00 &ndash; 14h00
+                                p
+                                    | Conf&eacute;rence d&apos;Elise Domenach - Corps meurtri, expressivit&eacute; et scepticisme au f&eacute;minin dans les films des Dardenne, de De l&rsquo;autre c&ocirc;t&eacute; de la fen&ecirc;tre (1984) &agrave; La Fille inconnue (2016)
+                                p
+                                    | Nous proposerons de suivre la r&eacute;flexion men&eacute;e par les fr&egrave;res Dardenne sur la souffrance f&eacute;minine depuis leurs films documentaires et jusqu&rsquo;&agrave; leurs fictions, comme dans les &eacute;crits de Luc Dardenne (L&rsquo;affaire humaine, Au dos de nos images). Cette souffrance se d&eacute;cline en souffrance des corps violent&eacute;s dans le cas des femmes battues dont ils recueillaient la parole aupr&egrave;s d&rsquo;un collectif de f&eacute;ministes li&eacute;goises en 1984 (De l&rsquo;autre c&ocirc;t&eacute; de la fen&ecirc;tre), en souffrance de la f&eacute;minit&eacute; &agrave; travers les douleurs de r&egrave;gle de Rosetta ou la grossesse imaginaire de Lorna (Le Silence de Lorna). Il s&rsquo;en d&eacute;gage une vision profonde de la chair f&eacute;minine comme lieu d&rsquo;expression de ce que le philosophe am&eacute;ricain Stanley Cavell appelle &laquo; la blessure d&rsquo;&ecirc;tre humain.
+                                hr
+                                p  14h00 &ndash; 15h00
+                                p
+                                    | Masterclasse avec Damien Keyeux - Le rapport au corps durant la Construction narrative et ses interf&eacute;rences
+                                hr
+                                p   15h30 &ndash; 16h30
+                                p
+                                    | Conf&eacute;rence par Matilda Casa, Caroline Merlo et Hanoulia Salame - Corporalit&eacute; et empathie : Etude comparative de la repr&eacute;sentation du corps et son impact dans le cin&eacute;ma des fr&egrave;res Dardenne.
+                                hr
+                                p 16h30 &ndash; 18h00
+                                p
+                                |   Masterclasse avec Bernard Bellefroid
+                                p
+                                hr
+                                p  18h30 &ndash; 21h00
+                                p  Projection de &laquo; Melody &raquo; (2014) de Bernard Bellefroid
+                    .panel.panel-default
+                        .panel-heading
+                            h4.panel-title
+                                a(data-toggle='collapse' data-parent='#accordion' href='#collapseThree')
+                                    | Samedi 10 f&eacute;vrier 2018
+                        #collapseThree.panel-collapse.collapse
+                            .panel-body
+                                p 10h00 &ndash; 11h30
+                                p Masterclasse avec Fabrice Du Welz
+                                hr
+                                p 11h30 &ndash; 13h00
+                                p Projection de &laquo; Calvaire &raquo; (2004) de Fabrice Du Welz
+                                hr
+                                p 13h15 &ndash; 14h00
+                                p Lunch
+                                hr
+                                p 14h00 &ndash; 15h00
+                                p Masterclasse avec Beno&icirc;t Dervaux
+                                hr
+                                p 15h00 &ndash; 16h30
+                                p Masterclasse avec Fien Troch
+                                hr
+                                p 16h30 &ndash; 17h30
+                                p
+                                    | Conf&eacute;rence par Christophe De Groef - De l&rsquo;&eacute;mergence d&rsquo;une &eacute;thique &laquo; &eacute;thologique &raquo;. L&rsquo;importance des corps bless&eacute;s dans le cin&eacute;ma des fr&egrave;res Dardenne.
+                                p
+                                    | Nous tenterons de montrer comment le cin&eacute;ma des Dardenne rejoue esth&eacute;tiquement la distinction deleuzienne entre la morale et l&rsquo;&eacute;thique, lorsque le corps bless&eacute; devient le lieu d&rsquo;&eacute;mergence d&rsquo;une &eacute;thique &laquo; &eacute;thologique &raquo;.
+                                hr
+                                p 17h30 &ndash; 19h00
+                                p Masterclasse avec Joachim Lafosse
+                                hr
+                                p 19h00 &ndash; 23h00
+                                p Projection de &laquo; &Eacute;l&egrave;ve Libre &raquo; (2008)
+            #carousel-container
+                h2.page-header Quelques souvenirs :
+                #carousel-example-generic.carousel.slide(data-ride='carousel')
+                    ol.carousel-indicators.visible-xs
+                        li.active(data-target='#carousel-example-generic' data-slide-to='0')
+                        li(data-target='#carousel-example-generic' data-slide-to='1')
+                        li(data-target='#carousel-example-generic' data-slide-to='2')
+                    .carousel-inner
+                        .item.active
+                            img(src='/images/home/colloque2.jpg' alt='')
+                            .carousel-caption
+                                h3 Soir&eacute;e d&apos;ouverture
+                                p Discours des fr&egrave;res Dardenne
+                        .item
+                            img(src='/images/home/colloque1.jpg' alt='')
+                            .carousel-caption
+                                h3 Soir&eacute;e d&apos;ouverture
+                                p
+                        .item
+                            img(src='/images/home/colloque3.JPG' alt='')
+                            .carousel-caption
+                                h3 Masterclasse - Fabrice Du Welz
+                                p
+                        .item
+                            img(src='/images/home/colloque4.JPG' alt='')
+                            .carousel-caption
+                                h3 Masterclasse - Fien Troch
+                                p
+                    a.left.carousel-control.hidden-xs(href='#carousel-example-generic' data-slide='prev')
+                        span.glyphicon.glyphicon-chevron-left
+                    a.right.carousel-control.hidden-xs(href='#carousel-example-generic' data-slide='next')
+                        span.glyphicon.glyphicon-chevron-right
+            .padding

@@ -1,0 +1,165 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[2] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title D&eacute;couvrez nos stages
+                            p Destin&eacute;s aux enfants et adolescents.
+    // /#page-breadcrumb
+    section#home-slider
+        .container
+            .row
+                .col-sm-10.col-sm-offset-1
+                    .row
+                        // ICONES STAGES
+                        .col-sm-12
+                            .clients.text-center.wow.fadeInUp(data-wow-duration='500ms' data-wow-delay='300ms')
+                                h1.title Nos prochains stages :
+                                h2.title R&eacute;alise ton court-m&eacute;trage
+                                p Toutes les infos &agrave; savoir
+                            .clients-logo.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='600ms')
+                                .stage_icons
+                                    .col-xs-3.col-sm-2
+                                        center
+                                            img(src='https://img.icons8.com/wired/64/000000/calendar.png')
+                                            p Du 5 au 9 ao&ucirc;t
+                                            p Du 19 au 23 ao&ucirc;t
+                                            p 2019
+                                    .col-xs-3.col-sm-2
+                                        center
+                                            img(src='https://img.icons8.com/wired/64/000000/girl.png')
+                                            p De 9 &agrave; 12 ans
+                                    .col-xs-3.col-sm-2
+                                        center
+                                            img(src='https://img.icons8.com/wired/64/000000/user-location.png')
+                                            p Barbiana
+                                            p Rue Adolphe P&eacute;cher 1
+                                            p 7000 Mons
+                                    .col-xs-3.col-sm-2
+                                        center
+                                            img(src='https://img.icons8.com/wired/64/000000/overtime.png')
+                                            p De 9h00 &agrave; 16h00
+                                            p Garderie
+                                            p  8h30-9h00
+                                            p  16h00-18h00
+                                    .col-xs-3.col-sm-2
+                                        center
+                                            img(src='https://img.icons8.com/wired/64/000000/euro-pound-exchange.png')
+                                            p 200 euros/enfant
+                                    .col-xs-3.col-sm-2
+                                        center
+                                            img(src='https://img.icons8.com/wired/64/000000/add-user-group-woman-man.png')
+                                            p Max. 15 enfants
+        .preloader
+            i.fa.fa-sun-o.fa-spin
+    section#services
+        .container
+            .row.stage_icons
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='300ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms' data-wow-delay='300ms')
+                            img(src='https://img.icons8.com/ios/500/000000/film-reel-filled.png')
+                        h2 Lundi
+                        p Les bases du langage cin&eacute;matographique :
+                        p  La magie du cin&eacute;ma, mais c&apos;est quoi ?
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='600ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms' data-wow-delay='600ms')
+                            img(src='https://img.icons8.com/ios/500/000000/camcorder-filled.png')
+                        h2 Mardi
+                        p D&eacute;couvrir les m&eacute;tiers du cin&eacute;ma :
+                        p Qui fait quoi derri&egrave;re la cam&eacute;ra ?
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='900ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms' data-wow-delay='900ms')
+                            img(src='https://img.icons8.com/ios/500/000000/inscription.png')
+                        h2 Mercredi
+                        p Ecrire un sc&eacute;nario :
+                        p Un film, oui, mais sur quoi ?
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='300ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms' data-wow-delay='300ms')
+                            img(src='https://img.icons8.com/ios/500/000000/clapperboard-filled.png')
+                        h2 Jeudi
+                        p Le tournage :
+                        p Silence. Moteur. ACTION !
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='600ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms' data-wow-delay='600ms')
+                            img(src='https://img.icons8.com/ios/500/000000/movie.png')
+                        h2 Vendredi
+                        p Le montage :
+                        p D&eacute;couper, assembler, cr&eacute;er !
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='900ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms' data-wow-delay='900ms')
+                            img(src='https://img.icons8.com/ios/500/000000/popcorn-time-filled.png')
+                        h2 Vendredi soir
+                        p Projections des films r&eacute;alis&eacute;s :
+                        p Popcorn !
+    // /#services
+    section#company-information.choose
+        .container
+            .row
+                .col-sm-6.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='0ms')
+                    h2 Pour adolescents
+                    p
+                        | Ce stage complet leur permettra de d&eacute;velopper leur sensibilit&eacute; artistique et d&rsquo;exprimer leur cr&eacute;ativit&eacute; en d&eacute;couvrant les coulisses de la cr&eacute;ation cin&eacute;matographique. Il leur permettra peut-&ecirc;tre d&rsquo;&eacute;veiller une vocation.
+                        | Nous d&eacute;sirons &eacute;galement valoriser leur travail en soutenant leurs cr&eacute;ations. Pour cela, nous organiserons des s&eacute;ances de projections et nous tenterons d&rsquo;inscrire leurs films dans plusieurs festivals.
+                        | Le stage sera destin&eacute; aux adolescents de 12 &agrave; 14 ans et de 15 &agrave; 18 ans durant les vacances scolaires.
+                    p Objectifs :
+                    ul.elements
+                        li.wow.fadeInUp(data-wow-duration='900ms' data-wow-delay='100ms')
+                            i.fa.fa-angle-right
+                            |  Accompagner les adolescents dans leur d&eacute;marche cr&eacute;ative
+                        li.wow.fadeInUp(data-wow-duration='800ms' data-wow-delay='200ms')
+                            i.fa.fa-angle-right
+                            |  Leur fournir les outils pour d&eacute;crypter le langage cin&eacute;matographique
+                        li.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='300ms')
+                            i.fa.fa-angle-right
+                            |  Les initier aux techniques de l&rsquo;audiovisuel
+                        li.wow.fadeInUp(data-wow-duration='600ms' data-wow-delay='400ms')
+                            i.fa.fa-angle-right
+                            |  D&eacute;velopper leur propre expression artistique en leur apprenant &agrave; communiquer leur vision au travers des images
+                        // <li class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms"><i class="fa fa-angle-right"></i> Développer l’expression personnelle tout en s’amusant</li>
+                .col-sm-6.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='0ms')
+                    h2 Pour enfants
+                    p
+                        | Ce stage complet leur proposera de r&eacute;aliser un court-m&eacute;trage depuis l&rsquo;&eacute;criture du sc&eacute;nario jusqu&rsquo;au montage. Leurs r&eacute;alisations seront projet&eacute;es &agrave; l&rsquo;occasion d&rsquo;une soir&eacute;e avec leur famille et leurs amis qui pourront d&eacute;couvrir leurs cr&eacute;ations.
+                        | Le stage sera destin&eacute; aux enfants entre 9 et 12 ans durant les vacances scolaires.
+                    p Objectifs :
+                    ul.elements
+                        li.wow.fadeInUp(data-wow-duration='900ms' data-wow-delay='100ms')
+                            i.fa.fa-angle-right
+                            |  Encourager la cr&eacute;ativit&eacute;
+                        li.wow.fadeInUp(data-wow-duration='800ms' data-wow-delay='200ms')
+                            i.fa.fa-angle-right
+                            |  Sensibiliser les enfants au langage cin&eacute;matographique
+                        li.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='300ms')
+                            i.fa.fa-angle-right
+                            |  Apprendre aux enfants &agrave; travailler en collectivit&eacute;
+                        li.wow.fadeInUp(data-wow-duration='600ms' data-wow-delay='400ms')
+                            i.fa.fa-angle-right
+                            |  Soutenir les enfants dans leur processus cr&eacute;atif
+                        li.wow.fadeInUp(data-wow-duration='500ms' data-wow-delay='500ms')
+                            i.fa.fa-angle-right
+                            |  D&eacute;velopper l&rsquo;expression personnelle tout en s&rsquo;amusant
+    // /#company-information
+    section#action.responsive
+        .vertical-center
+            .container
+                .row
+                    .action.take-tour
+                        .col-sm-7.wow.fadeInLeft(data-wow-duration='500ms' data-wow-delay='300ms')
+                            h1.title S&apos;inscrire &agrave; un stage
+                            p Vous avez envie d&apos;initier votre enfant/adolescent au cin&eacute;ma ?
+                        .col-sm-5.text-center.wow.fadeInRight(data-wow-duration='500ms' data-wow-delay='300ms')
+                            .tour-button
+                                a.btn.btn-common(href='message.html') S&apos;inscrire

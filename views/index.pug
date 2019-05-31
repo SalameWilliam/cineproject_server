@@ -1,0 +1,118 @@
+extends layout
+
+block beforeBody
+  - bodyclasses[0] = ["dropdown","active"]
+
+block content
+  section#home-slider
+    .container
+      .row
+        .main-slider
+          .slide-text
+            h1  Découvrez Cin&Project
+            p
+              | Cin&Project est construit sur deux piliers : la fédération et la transmission.
+              | D’un côté, nous avons pour but d’organiser des projets autour du septième art, de soutenir des cinéastes débutants et professionnels à travers l’organisation d’initiatives tels que des festivals et des colloques.
+              | De l’autre, nous développons des projets pédagogiques pour sensibiliser et initier les plus jeunes à notre passion.
+            a.btn.btn-common(href='aboutus2.html') Découvrez l'équipe
+          .slider-image
+            img.slider-hill(src='images/home/gif-cinema.gif', alt='slider image')
+    .preloader
+      i.fa.fa-sun-o.fa-spin
+  // /#home-slider
+  section#services
+    .container
+      .row
+        .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='300ms')
+          .single-service
+            .wow.scaleIn(data-wow-duration='500ms', data-wow-delay='300ms')
+              img(src='https://img.icons8.com/doodle/480/000000/brainstorm-skill.png')
+            h2 Eveiller des vocations
+            p
+              | Nous souhaitons encourager l’expression de la créativité en transmettant les outils qui permettront à tout un chacun de communiquer sa sensibilité artistique et sa vision du monde.
+        .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='600ms')
+          .single-service
+            .wow.scaleIn(data-wow-duration='500ms', data-wow-delay='600ms')
+              img(src='https://img.icons8.com/doodle/480/000000/volunteering.png')
+            h2 Soutenir les cinéastes
+            p
+              | Au travers de nos évènements, nous avons l’ambition de toujours mieux encadrer les cinéastes et de créer des opportunités de rencontres entre les artistes.
+        .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='900ms')
+          .single-service
+            .wow.scaleIn(data-wow-duration='500ms', data-wow-delay='900ms')
+              img(src='https://img.icons8.com/doodle/480/000000/clapperboard.png')
+            h2 Rendre le cinéma accessible
+            p
+              | Nos projets s’inscrivent dans une démarche fédératrice visant à ouvrir un domaine spécifique au plus grand nombre. Il y a l’idée d’une éducation à l’image, mais aussi l’éveil d’un intérêt artistique.
+  // /#services
+  section#subscribe
+    .container
+      .row
+        .col-sm-10.col-sm-offset-1
+          .row
+            .col-sm-6
+              h2
+                i.fa.fa-envelope(aria-hidden='true')
+                |  Inscrivez-vous à notre newsletter
+              p
+                | Restez au courant de nos activités tout au long de l'année,
+                br
+                | Il y aura plein de petites surprises aussi...
+            .col-sm-6.newsletter
+              form#newsletter
+                input.form-control(type='email', name='email', value='', placeholder='Votre mail ici')
+                i#check.fa.fa-check
+              p On vous promet que vous n'aurez aucun spam :)
+  section#features
+    .container
+      .row
+        .single-features
+          .clients.text-center.wow.fadeInUp(data-wow-duration='500ms', data-wow-delay='300ms')
+            // <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
+            a(name='identifier')
+              h1.title Découvrez nos prochains évènements :
+          .col-sm-5.wow.fadeInLeft(data-wow-duration='500ms', data-wow-delay='300ms')
+            a(href='stage.html')
+              img.img-responsive(src='images/home/stage-flyer.png', alt='')
+          .col-sm-6.wow.fadeInRight(data-wow-duration='500ms', data-wow-delay='300ms')
+            .project-name.overflow
+              h2.bold  Stages de cinéma pour enfants
+              ul.nav.navbar-nav.navbar-default
+                li
+                  a(href='stage.html')
+                    i.fa.fa-tag
+                    | Pour enfant entre 9 et 12 ans
+                li
+                  a(href='stage.html')
+                    i.fa.fa-clock-o
+                    |  Du 5 au 9 août 2019 et du 19 au 23 août 2019
+            .project-info.overflow
+              // <h3> </h3>
+              p
+                | Les prochains stages se dérouleront du 5 au 9 août 2019 et du 19 au 23 août 2019 dans les locaux de Barbiana à Mons.
+                | Ils sont destinés aux enfants de 9 à 12 ans. Ils y découvriront les étapes de la création cinématographique et réaliseront un court-métrage qui sera projeté à l’occasion d’une soirée ouverte aux familles organisée le vendredi.
+              p
+                | Les places sont limitées ! Pour en savoir plus, c'est par
+                a(href='stage.html') ici
+        .single-features
+          .col-sm-6.col-sm-offset-1.align-right.wow.fadeInLeft(data-wow-duration='500ms', data-wow-delay='300ms')
+            .project-name.overflow
+              h2.bold 5ème édition du 48 Hour Film Project – Brussels
+              ul.nav.navbar-nav.navbar-default
+                li
+                  a(href='48hfp.html')
+                    i.fa.fa-tag
+                    | Pour tout le monde
+                li
+                  a(href='48hfp.html')
+                    i.fa.fa-clock-o
+                    |  Restez patient, les dates arrivent !
+            .project-info.overflow
+              // <h3></h3>
+              p
+                | Le festival revient bientôt à Bruxelles pour sa 5ème édition ! On vous dévoile très vite les dates et les nouveautés de cette édition. Pour ne rien manquer, inscrivez-vous à notre
+                a(href='message.html') newsletter
+                |  et soyez les premiers avertis du calendrier et de l’ouverture des inscriptions !
+          .col-sm-5.wow.fadeInRight(data-wow-duration='500ms', data-wow-delay='300ms')
+            a(href='48hfp.html')
+              img.img-responsive(src='images/home/48HFP2.jpg', alt='')

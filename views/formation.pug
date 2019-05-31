@@ -1,0 +1,81 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[2] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title D&eacute;couvrez nos formations
+                            p Destin&eacute;es aux adultes
+    // /#page-breadcrumb
+    section#portfolio-information.padding-top
+        .container
+            .row
+                .col-sm-6
+                    .project-name.overflow
+                    .project-info.overflow
+                        h1 En bref
+                        p
+                            | Nous proposons des weekends d&rsquo;initiation au sc&eacute;nario de films de fiction dans diff&eacute;rentes villes et villages de Wallonie. Ces weekends n&rsquo;exigent aucun pr&eacute;requis et sont ouverts &agrave; tous. Vous pourrez vous familiariser avec les fondamentaux de l&rsquo;&eacute;criture sc&eacute;naristique et d&eacute;couvrir les outils qui vous permettront de transformer vos id&eacute;es en sc&eacute;nario.
+                        h2 Ce que vous allez apprendre pendant les weekends de formations th&eacute;oriques :
+                        ul.elements
+                            li
+                                i.fa.fa-angle-right
+                                |   Structurer et d&eacute;velopper le potentiel dramatique d&rsquo;une histoire
+                            li
+                                i.fa.fa-angle-right
+                                |  La structure en trois actes
+                            li
+                                i.fa.fa-angle-right
+                                |   Les composantes dramatiques
+                            li
+                                i.fa.fa-angle-right
+                                |  Cr&eacute;er des personnages de fiction
+                            li
+                                i.fa.fa-angle-right
+                                |  &Eacute;crire des dialogues de cin&eacute;ma
+                            li
+                                i.fa.fa-angle-right
+                                |  Les techniques du suspens
+                            li
+                                i.fa.fa-angle-right
+                                |  La m&eacute;thodologie d&rsquo;&eacute;criture
+                            li
+                                i.fa.fa-angle-right
+                                |  La mise en forme d&rsquo;un sc&eacute;nario
+                        br
+                        br
+                .col-sm-6
+                    .skills.overflow
+                        h2 Ce que vous allez faire pendant les weekends de formations pratiques:
+                        ul.elements
+                            li
+                                i.fa.fa-check-square
+                                | &Eacute;criture d&rsquo;un synopsis
+                            li
+                                i.fa.fa-check-square
+                                | &Eacute;criture d&rsquo;une sc&egrave;ne
+                            li
+                                i.fa.fa-check-square
+                                |  &Eacute;criture de personnages
+                            li
+                                i.fa.fa-check-square
+                                | &Eacute;criture d&rsquo;un court-m&eacute;trage
+                        p
+                            | Ces ateliers pratiques seront encadr&eacute;s par des animateurs. Vous devrez au pr&eacute;alable avoir suivi les formations th&eacute;oriques pour pouvoir y assister.
+    section#action.responsive
+        .vertical-center
+            .container
+                .row
+                    .action.take-tour
+                        .col-sm-7.wow.fadeInLeft(data-wow-duration='500ms' data-wow-delay='300ms')
+                            h1.title Int&eacute;ress&eacute;.e par une formation ?
+                            p
+                        .col-sm-5.text-center.wow.fadeInRight(data-wow-duration='500ms' data-wow-delay='300ms')
+                            .tour-button
+                                a.btn.btn-common(href='message.html') Contactez-nous

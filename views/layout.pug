@@ -1,0 +1,155 @@
+doctype html
+
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Accueil | Cin&Project
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/font-awesome.min.css', rel='stylesheet')
+    link(href='/css/animate.min.css', rel='stylesheet')
+    link(href='/css/lightbox.css', rel='stylesheet')
+    link(href='/css/main.css', rel='stylesheet')
+    link(href='/css/responsive.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.0/css/all.css', integrity='sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css')
+    //if lt IE 9
+      script(src='js/html5shiv.js')
+      script(src='js/respond.min.js')
+    link(rel='shortcut icon', href='/images/ico/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/images/ico/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/images/ico/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/images/ico/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='/images/ico/apple-touch-icon-57-precomposed.png')
+  // /head
+
+  - var bodyclasses = []
+  block beforeBody
+    - bodyclasses[0] = "dropdown";
+    - bodyclasses[1] = "dropdown";
+    - bodyclasses[2] = "dropdown";
+    - bodyclasses[3] = "dropdown";
+    - bodyclasses[4] = "dropdown";
+  body
+    header#header
+      .navbar.navbar-inverse(role='banner')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/')
+              h1
+                img.logo(src='/images/logo.png', alt='logo')
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li(class=bodyclasses[0])
+                a(href='/') Accueil
+              li(class=bodyclasses[1])
+                a(href='/festivals')
+                  | Fédérer les cinéastes
+                  i.fa.fa-angle-right.angle-swap
+                ul.sub-menu(role='menu')
+                  li
+                    a(href='/festivals/48hfp') 48 Hour Film Project
+
+                  li
+                    a(href='/festivals/partenaire') Devenir Partenaire
+
+              li(class=bodyclasses[2])
+                a(href='/pedagogique')
+                  | Transmettre le cinéma
+                  i.fa.fa-angle-right.angle-swap
+                ul.sub-menu(role='menu')
+                  li
+                    a(href='/pedagogique/colloque') Colloque / Masterclass
+                  li
+                    a(href='/pedagogique/stage') Stages
+                  li
+                    a(href='/pedagogique/formation') Formations
+                  li
+                    a(href='/pedagogique/box') Nos box éducatives
+              li(class=bodyclasses[3])
+                a(href='/about_us')  Qui sommes nous ?
+              li(class=bodyclasses[4])
+                a(href='/contact')  Contact
+    // /#header
+    block content
+    footer#footer
+      .container
+        .row
+          .col-sm-12.text-center.bottom-separator
+            // <img src="images/home/under.png" class="img-responsive inline" alt="">
+          .col-md-3.col-sm-6.footer_left
+            .testimonial.bottom
+              h2 Nos pages
+              .media
+                .pull-left
+                  a(href='festivals')
+                    h3 F&eacute;d&eacute;rer les cin&eacute;astes
+                  a(href='festivals/48hfp')
+                    p 48 Hour Film Project
+                  a(href='festivals/partenaire')
+                    p Devenir partenaire
+                  a(href='pedagogique')
+                    h3 Transmettre le cin&eacute;ma
+                  a(href='pedagogique/colloque')
+                    p Colloque/masterclass
+                  a(href='pedagogique/stage')
+                    p Stages
+                  a(href='pedagogique/formation')
+                    p Formations
+                  a(href='pedagogique/box')
+                    p Nos box &eacute;ducatives
+                  a(href='aboutus')
+                    h3 Qui sommes nous ?
+          .col-md-3.col-sm-6.footer_right
+            .contact-info.bottom
+              h2 Contacts
+              address
+                | Email:
+                a(href='mailto:cineproject@cineproject.be') cineproject@cineproject.be
+                br
+                |                                 Matilda Casa : +32 (0) 498 106 897
+                br
+                |                                 Gregory Miroir : +32 (0) 498 244 963
+                br
+              h2 Retrouvez nous sur :
+              .icons
+                a.facebook(href='https://www.facebook.com/CineProjectAsbl/' target='blank')
+                  img(src='https://img.icons8.com/wired/64/000000/facebook.png')
+                a.facebook(href='https://www.instagram.com/48hfp_brussels/' target='blank')
+                  img(src='https://img.icons8.com/wired/64/000000/instagram.png')
+                a.facebook(href='https://www.youtube.com/channel/UCG71HL1WJ72ld1aoxp9HqTQ' target='blank')
+                  img(src='https://img.icons8.com/wired/64/000000/youtube-play.png')
+          .col-md-4.col-sm-12.footer_center
+            .contact-form.bottom
+              h2 Une question ? Envoyez-nous un message
+              form#main-contact-form( action ='newsletter/' name='contact-form' method='POST')
+                .form-group
+                  input.form-control(type='text' name='name' required='required' placeholder='Nom')
+                .form-group
+                  input.form-control(type='email' name='email' required='required' placeholder='Votre email')
+                .form-group
+                  textarea#message.form-control(type='text' name='message' required='required' rows='8' placeholder='Votre message')
+                .form-group
+                  input.btn.btn-submit(type='submit' name='submit' value='Envoyer')
+          .col-sm-12
+            .copyright-text.text-center
+              p &copy; Cin&amp;Project 2019. All Rights Reserved.
+              p
+                | Designed by
+                a(target='_blank' href='http://www.themeum.com') Themeum
+              a(href='https://icones8.fr/icons' target='_blank') Icons by Icons8
+    // /#footer
+    script(type='text/javascript' src='/js/jquery.js')
+    script(type='text/javascript' src='/js/jquery-ui.min.js')
+    script(type='text/javascript' src='/js/bootstrap.min.js')
+    script(type='text/javascript' src='/js/lightbox.min.js')
+    script(type='text/javascript' src='/js/wow.min.js')
+    script(type='text/javascript' src='/js/main.js')
+    script(type='text/javascript' src='/js/pedagogique.js')

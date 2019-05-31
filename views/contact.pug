@@ -1,0 +1,114 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[4] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title Contactez-nous
+                            p N&apos;ayez pas peur, on est super sympas !
+    section#company-information.padding.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='300ms')
+        .container
+            .row
+                .col-sm-6
+                    h2 Pas de timidit&eacute; ici, on r&eacute;pond &agrave; toutes vos questions :
+                    form#main-contact-form(name='contact-form' method='post' action='sendemail.php')
+                        .form-group
+                            input.form-control(type='text' name='name' required='required' placeholder='Nom')
+                        .form-group
+                            input.form-control(type='email' name='email' required='required' placeholder='Votre email')
+                        .form-group
+                            textarea#message.form-control(name='message' required='required' rows='8' placeholder='Votre message')
+                        .form-group
+                            input.btn.btn-submit(type='submit' name='submit' value='Envoyer')
+                .col-sm-6
+                    .contact-info.bottom
+                        h2 Vous avez une question g&eacute;n&eacute;rale ?
+                        h3
+                            | Envoyez-nous un petit (ou grand) message, on vous r&eacute;pondra avec plaisir aussi vite que possible :
+                        address
+                            | E-mail :
+                            a(href='mailto:cineproject@cineproject.be') cineproject@cineproject.be
+                            br
+                            h2 Vous pr&eacute;f&eacute;rez discuter directement par t&eacute;l&eacute;phone ?
+                            h3 Aucun soucis ! Voici comment nous joindre :
+                            |                                     Matilda Casa : +32 (0) 498 106 897
+                            br
+                            |                                     Gregory Miroir : +32 (0) 498 244 963
+                            br
+        .preloader
+            i.fa.fa-sun-o.fa-spin
+    section#subscribe
+        .container
+            .row
+                .col-sm-10.col-sm-offset-1
+                    h1.title.text-center.wow.fadeInDown(data-wow-duration='500ms' data-wow-delay='300ms') Vous ne savez pas &agrave; qui vous adresser ?
+                    p.text-center.wow.fadeInDown(data-wow-duration='400ms' data-wow-delay='400ms')
+                        br
+                    p.text-center.wow.fadeInDown(data-wow-duration='400ms' data-wow-delay='400ms')
+                        | Si vous avez une question sp&eacute;cifique ? Contactez un membre de l&rsquo;&eacute;quipe : on est tous tr&egrave;s sympas et on adore recevoir vos messages !
+                        br
+                    #team-carousel.carousel.slide.wow.fadeIn(data-ride='carousel' data-wow-duration='400ms' data-wow-delay='400ms')
+                        // Indicators
+                        ol.carousel-indicators.visible-xs
+                            li.active(data-target='#team-carousel' data-slide-to='0')
+                            li(data-target='#team-carousel' data-slide-to='1')
+                        // Wrapper for slides
+                        .carousel-inner
+                            .col-sm-3.col-xs-6
+                                .team-single-wrapper
+                                    .team-single
+                                        .person-thumb
+                                            img.img-responsive(src='images/aboutus/Cin&Project_Membre_Matilda.jpg' alt='')
+                                    .person-info
+                                        h2 Matilda Casa
+                                        p Responsable de projets &amp;
+                                        p Productrice (48HFP) &amp;
+                                        p Coordinatrice &amp;
+                                        p Formatrice
+                                        a(href='mailto:matilda@cinéproject.be')
+                                            h3 matilda@cin&eacute;project.be
+                            .col-sm-3.col-xs-6
+                                .team-single-wrapper
+                                    .team-single
+                                        .person-thumb
+                                            img.img-responsive(src='images/aboutus/Cin&Project_Membre_Greg.jpg' alt='')
+                                    .person-info
+                                        h2 Gr&eacute;gory Miroir
+                                        p Coordinateur Partenaires &amp;
+                                        p Producteur (48HFP) &amp;
+                                        p Formateur
+                                        a(href='mailto:greg@cineproject.be')
+                                            h3 greg@cineproject.be
+                            .col-sm-3.col-xs-6
+                                .team-single-wrapper
+                                    .team-single
+                                        .person-thumb
+                                            img.img-responsive(src='images/aboutus/Cin&Project_Membre_Hanou.jpg' alt='')
+                                    .person-info
+                                        h2 Hanoulia Salam&eacute;
+                                        p Web &amp; Social Media &amp;
+                                        p Communication &amp;
+                                        p Formatrice
+                                        a(href='mailto:hanoulia@cineproject.be')
+                                            h3 hanoulia@cineproject.be
+                            .col-sm-3.col-xs-6
+                                .team-single-wrapper
+                                    .team-single
+                                        .person-thumb
+                                            img.img-responsive(src='images/aboutus/Cin&Project_Membre_Caro.jpg' alt='')
+                                    .person-info
+                                        h2 Caroline Merlo
+                                        p Illustratrice &amp;
+                                        p P&eacute;dagogie &amp;
+                                        p Formatrice
+                                        a(href='mailto:caroline@cineproject.be')
+                                            h3 caroline@cineproject.be
+                            // Controls
+                            a.left.team-carousel-control.hidden-xs(href='#team-carousel' data-slide='prev') left
+                            a.right.team-carousel-control.hidden-xs(href='#team-carousel' data-slide='next') right

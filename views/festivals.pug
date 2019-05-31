@@ -1,0 +1,57 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[1] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title Fédérer les cinéastes
+                            p Encadrement, impulsion et soutien sont nos mots clés !
+    // /#action
+    section#home-slider
+        .container
+            .row
+                .main-slider
+                    .slide-text
+                        h2
+                            | Cin&Project a pour ambition de fédérer et d’épauler les cinéastes affirmés et en devenir.
+                        p
+                            | Nous construisons plusieurs pôles avec l’ambition de toujours mieux encadrer les cinéastes et de créer des opportunités de rencontres entre les artistes. Nous mettons tout en œuvre pour constituer l’impulsion permettant aux passionnés et professionnels de développer leurs projets.
+                        ul.elements
+                            li.wow.fadeInUp(data-wow-duration='900ms', data-wow-delay='100ms')
+                                i.fa.fa-angle-right
+                                |  Festivals
+                            li.wow.fadeInUp(data-wow-duration='800ms', data-wow-delay='200ms')
+                                i.fa.fa-angle-right
+                                |  Rencontres entre professionnels
+                            li.wow.fadeInUp(data-wow-duration='700ms', data-wow-delay='300ms')
+                                i.fa.fa-angle-right
+                                |  Ateliers
+                            li.wow.fadeInUp(data-wow-duration='600ms', data-wow-delay='400ms')
+                                i.fa.fa-angle-right
+                                |  WorkShops
+                            li.wow.fadeInUp(data-wow-duration='500ms', data-wow-delay='500ms')
+                                i.fa.fa-angle-right
+                                |  ...
+                    img.slider-hill(src='/images/home/birds.png', alt='slider image', width='40%')
+        .preloader
+            i.fa.fa-sun-o.fa-spin
+    section#related-work.padding-top.padding-bottom
+        .container
+            .row
+                h1.title.text-center Découvrez nos événements
+                .carousel-inner
+                    .col-sm-3
+                        .portfolio-wrapper
+                            .portfolio-single
+                                a(href='48HFP.html')
+                                    .portfolio-thumb
+                                        img.img-responsive(src='/images/home/48HFP4.jpg', alt='')
+                            .portfolio-info
+                                h2
+                                    a(href='48HFP.html') 48 Hour Film Project

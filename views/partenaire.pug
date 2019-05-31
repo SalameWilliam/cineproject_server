@@ -1,0 +1,136 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[1] = ["dropdown","active"]
+
+block content
+    // /#header
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title Devenir partenaire
+                            p
+                                | L&rsquo;&eacute;quipe de Cin&amp;Project est toujours &agrave; la recherche de partenaires pour ses diff&eacute;rents projets.
+    // /#page-breadcrumb
+    section#home-slider.choose
+        .container
+            .row
+                .col-sm-6.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='0ms')
+                    h2 Pourquoi devenir partenaire du 48 HFP ?
+                    p
+                    ul.elements
+                        li.wow.fadeInUp(data-wow-duration='900ms' data-wow-delay='100ms')
+                            i.fa.fa-angle-right
+                            |  S&apos;associer &agrave; un festival qui a fait ses preuves depuis plus de 10 ans
+                        li.wow.fadeInUp(data-wow-duration='800ms' data-wow-delay='200ms')
+                            i.fa.fa-angle-right
+                            |  Toucher et f&eacute;d&eacute;rer un public de passionn&eacute;s de cin&eacute;ma
+                        li.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='300ms')
+                            i.fa.fa-angle-right
+                            |  Pr&eacute;sence de votre logo sur tous nos supports de communication
+                        li.wow.fadeInUp(data-wow-duration='600ms' data-wow-delay='400ms')
+                            i.fa.fa-angle-right
+                            |  Remise d&apos;un prix et discours par l&apos;un de vos repr&eacute;sentants lors de la soir&eacute;e de cl&ocirc;ture
+                        li.wow.fadeInUp(data-wow-duration='500ms' data-wow-delay='500ms')
+                            i.fa.fa-angle-right
+                            |  Promotion pendant toute la dur&eacute;e du festival ainsi que lors de tous les &eacute;v&eacute;nements associ&eacute;s au festival
+                .col-sm-6.padding-top.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='0ms')
+                    h2 Ce dont nous aurions besoin :
+                    p
+                    ul.elements
+                        li.wow.fadeInUp(data-wow-duration='900ms' data-wow-delay='100ms')
+                            i.fa.fa-angle-right
+                            |  Un &eacute;change de communication
+                        li.wow.fadeInUp(data-wow-duration='800ms' data-wow-delay='200ms')
+                            i.fa.fa-angle-right
+                            |  Des services
+                        li.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='300ms')
+                            i.fa.fa-angle-right
+                            |  Des biens mat&eacute;riels
+                        li.wow.fadeInUp(data-wow-duration='600ms' data-wow-delay='400ms')
+                            i.fa.fa-angle-right
+                            |  Des financements
+        .preloader
+            i.fa.fa-sun-o.fa-spin
+    section#clients
+        .container
+            .row
+                .col-sm-12
+                    .clients.text-center.wow.fadeInUp(data-wow-duration='500ms' data-wow-delay='300ms')
+                        h1.title Parce que le 48 Hour Film Project c&apos;est 13 prix :
+                        p
+                            | (Sans compter le
+                            font(color='#ae4731') prix du public
+                            |  et les
+                            font(color='#ae4731') mentions sp&eacute;ciales
+                            |  attribu&eacute;s par le jury)
+                        h3 Et si vous proposiez vos produits/services/financements aux gagnants ?
+                        img.img-responsive(src='/images/home/48HFP3.jpg' alt='' height='50%' width='50%')
+                        p
+                        // <p><iframe src="https://giphy.com/embed/FGmbEOTVWQHzW" width="480" height="248" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/love-jim-carrey-award-FGmbEOTVWQHzW"></a></p></p>
+                    .clients-logo.wow.fadeIn(data-wow-duration='1000ms' data-wow-delay='600ms')
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure utilisation de l&rsquo;objet
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure utilisation du personnage
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure utilisation de la ligne de dialogue
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure actrice &amp; Meilleur acteur
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure musique
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleur son
+                    hr
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleur montage
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleure image
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleur sc&eacute;nario
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleure r&eacute;alisation
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p 2&egrave;me Meilleur film
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleur Film
+    // /#clients
+    section#action.responsive
+        .vertical-center
+            .container
+                .row
+                    .action.take-tour
+                        .col-sm-7.wow.fadeInLeft(data-wow-duration='500ms' data-wow-delay='300ms')
+                            h1.title Devenir partenaire du 48HFP
+                            p Si notre festival vous int&eacute;resse, contactez-nous !
+                        .col-sm-5.text-center.wow.fadeInRight(data-wow-duration='500ms' data-wow-delay='300ms')
+                            .tour-button
+                                a.btn.btn-common(href='contact2.html') Je veux &ecirc;tre partenaire
+    // /#action

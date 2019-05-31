@@ -1,0 +1,260 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[1] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title 48 Hour Film Project
+                            p Découvrez notre festival
+    // /#page-breadcrumb
+    section#company-information.padding.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='300ms')
+        .container
+            .row
+                .col-sm-6
+                    #myCarousel.carousel.slide(data-ride='carousel')
+                        // Indicators
+                        ol.carousel-indicators
+                            li.active(data-target='#myCarousel', data-slide-to='0')
+                            li(data-target='#myCarousel', data-slide-to='1')
+                            li(data-target='#myCarousel', data-slide-to='2')
+                            li(data-target='#myCarousel', data-slide-to='3')
+                        // Wrapper for slides
+                        .carousel-inner
+                            .item.active
+                                img(src='/images/home/48HFP2.jpg', alt='4ème édition')
+                                .carousel-caption
+                                    //
+                                      <h3>Los Angeles</h3>
+                                      <p>LA is always so much fun!</p>
+                            .item
+                                img(src='/images/home/48HFP3.jpg', alt='Trophés de la 4ème édition')
+                                .carousel-caption
+                                    //
+                                      <h3>Chicago</h3>
+                                      <p>Thank you, Chicago!</p>
+                            .item
+                                img(src='/images/portfolio/48HFP_2018_Cérémonie2.jpg', alt='New York')
+                                .carousel-caption
+                                    //
+                                      <h3>New York</h3>
+                                      <p>We love the Big Apple!</p>
+                        // Left and right controls
+                        a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                            span.glyphicon.glyphicon-chevron-left
+                            span.sr-only Previous
+                        a.right.carousel-control(href='#myCarousel', data-slide='next')
+                            span.glyphicon.glyphicon-chevron-right
+                            span.sr-only Next
+                .col-sm-6
+                    p
+                        | Le  48 Hour Film Project est un concours de courts-métrages international qui, comme son nom l’indique, se déroule en 48h.
+                        | L’équipe qui remporte le prix du « Meilleur Film » représente son pays à Filmapalooza, la grande finale internationale qui réunit plus de 130 villes à travers le monde. Les 10 meilleurs films internationaux sont diffusés au Festival de Cannes.
+                    p
+                        | Les participants disposent de deux jours pour écrire, tourner, monter et remettre leur film. Un exercice qui demande une certaine rigueur ainsi qu'une grosse dose de créativité, mais le challenge ne s’arrête pas là... Pour corser un peu les choses, certains éléments sont imposés :
+    section#services
+        .container
+            .row
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='300ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms', data-wow-delay='300ms')
+                            img(src='https://img.icons8.com/doodle/4800/000000/user-female-skin-type-5.png')
+                        h2 Un personnage
+                        p Mark ou Matilda Van Berg, Voisin
+                        p Jan or Jenna Dewaere, Imprimeur
+                        p Erik or Erika Goossens, Auteur de BD
+                        p Léo ou Léa Clerx, Concierge
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='600ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms', data-wow-delay='600ms')
+                            img(src='https://img.icons8.com/doodle/4800/000000/suitcase.png')
+                        h2 Un objet
+                        p Un morceau de chocolat
+                        p Une Clé
+                        p Une bouteille
+                        p Une valise
+                .col-sm-4.text-center.padding.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='900ms')
+                    .single-service
+                        .wow.scaleIn(data-wow-duration='500ms', data-wow-delay='900ms')
+                            img(src='https://img.icons8.com/doodle/4800/000000/chat.png')
+                        h2 Une ligne de dialogue
+                        p "Ne soyez pas intimidé(e) par la caméra."
+                        p "Mesdames, Messieurs, un peu de silence."
+                        p "Je ne crois pas que ce soit possible."
+                        p "Jusqu'ici, tout va bien..."
+    section#clients
+        .container
+            .row
+                .col-sm-12
+                    .clients.text-center.wow.fadeInUp(data-wow-duration='500ms', data-wow-delay='300ms')
+                        h1.title Le 48 Hour Film Project c'est 13 prix :
+                        a(href='#identifier')
+                            h2 Remis par un jury de professionels
+                        p
+                            | (Sans compter le
+                            font(color='#ae4731') prix du public
+                            |  et les
+                            font(color='#ae4731') mentions spéciales
+                            |  attribuées par le jury)
+                        // <p><img src="/images/home/48HFP3.jpg" class="img-responsive" alt="" height="50%" width="50%"></p>
+                        p
+                            iframe.giphy-embed(src='https://giphy.com/embed/FGmbEOTVWQHzW', allowfullscreen='', width='480', height='248', frameborder='0')
+                        p
+                            a(href='https://giphy.com/gifs/love-jim-carrey-award-FGmbEOTVWQHzW')
+                        p
+                        a(href='partenaire.html')
+                            h3 Pour devenir partenaire, c'est par ici
+                    .clients-logo.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='600ms')
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure utilisation de l’objet
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure utilisation du personnage
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure utilisation de la ligne de dialogue
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure actrice & Meilleur acteur
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleure musique
+                        .col-xs-3.col-sm-2
+                            p(style='text-align:center;')
+                                img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                            p Meilleur son
+                    hr
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleur montage
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleure image
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleur scénario
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleure réalisation
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p 2ème Meilleur film
+                    .col-xs-3.col-sm-2
+                        p(style='text-align:center;')
+                            img(src='https://img.icons8.com/doodle/48/000000/laurel-wreath.png')
+                        p Meilleur Film
+    // /#clients
+    section#shortcodes
+        .container
+            #video-container
+                .row
+                    .col-md-6
+                        h2.page-header Meilleur Film 2018
+                        iframe(src='https://www.youtube.com/embed/u1RdFXDkiDA', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='', width='560', height='315', frameborder='0')
+                    .col-md-6
+                        h2.page-header Prix du public 2018
+                        iframe(src='https://www.youtube.com/embed/vuTyZ2sPUnk', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='', width='560', height='315', frameborder='0')
+            // /#video-container
+    section#recent-projects.recent-projects
+        .container
+            .row
+                a(name='identifier')
+                    h1.title.text-center.wow.fadeInDown(data-wow-duration='500ms', data-wow-delay='300ms') Le jury 2018
+                p.text-center.padding-bottom.wow.fadeInDown(data-wow-duration='400ms', data-wow-delay='400ms')
+                    | Découvrez le jury de la quatrième édition du 48HFP
+                    br
+                .col-sm-3.col-xs-6.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='300ms')
+                    .portfolio-wrapper
+                        .portfolio-single
+                            .portfolio-thumb
+                                img(src='/images/home/muriel.jpg', alt='')
+                        .portfolio-info
+                            h2 Muriel Andrin
+                            p
+                                | Elle enseigne notamment l'Histoire du Cinéma Belge, l'Histoire du film documentaire et les Nouvelles Images à l'Université Libre de Bruxelles. Elle est membre des Centres de recherches MuCiA (Musique, Cinéma et Arts de la scène) et SAGES (Savoir, Genre et Sociétés).
+                .col-sm-3.col-xs-6.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='400ms')
+                    .portfolio-wrapper
+                        .portfolio-single
+                            .portfolio-thumb
+                                img.img-responsive(src='/images/home/seron2.jpg', alt='')
+                        .portfolio-info
+                            h2 Xavier Seron
+                            p
+                                | Le réalisateur et scénariste, Xavier Seron, nous a fait l'honneur de faire partie du jury cette année. Il a notamment réalisé "Je me tue à le dire / Death by Death" pour lequel il a reçu le Magritte du "Meilleur Scénario".
+                .col-sm-3.col-xs-6.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='500ms')
+                    .portfolio-wrapper
+                        .portfolio-single
+                            .portfolio-thumb
+                                img.img-responsive(src='/images/home/paquay.jpg', alt='')
+                        .portfolio-info
+                            h2 François Paquay
+                            p
+                                | Réalisateur, producteur et scénariste, il est notamment l’auteur du court-métrage « Le Con », sélectionné dans de nombreux festivals et primé au BuSho.
+                                | Il contribue à l’effervescence du cinéma belge avec sa société IMAGINE-Production.
+                .col-sm-3.col-xs-6.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='600ms')
+                    .portfolio-wrapper
+                        .portfolio-single
+                            .portfolio-thumb
+                                img.img-responsive(src='/images/home/eve1.jpg', alt='')
+                        .portfolio-info
+                            h2 Eve Commenge
+                            p
+                                | Elle a fondé Anonymes Films et elle est notamment productrice des films "Laissez bronzer les cadavres" (Cattet et Forzani, 2017) et "L'étrange couleur des larmes de ton corps" (Cattet et Forzani, 2013)
+    // /#recent-projects
+    section#coming-soon
+        .container
+            .row
+                .col-sm-8.col-sm-offset-2
+                    .text-center.coming-content
+                        h1 Un peu de patience, les dates arrivent...
+                        p
+                            | Le festival revient bientôt à Bruxelles pour sa 5ème édition !
+                            br
+                            |  On vous dévoile très vite les dates et les nouveautés de cette édition.
+                            br
+                            |  Pour ne rien manquer, inscrivez-vous à notre
+                            a(href='message.html') newsletter
+                            |  et
+                            br
+                            |  soyez les premiers avertis du calendrier et de l’ouverture des inscriptions !
+    section
+        .container
+            .row
+                .col-sm-12
+                    .clients.text-center.wow.fadeInUp(data-wow-duration='500ms', data-wow-delay='300ms')
+                        h2 Retrouvez nous sur :
+                        .icons
+                            a(href='https://www.instagram.com/48hfp_brussels/', target='_blank')
+                                img(src='https://img.icons8.com/wired/64/000000/instagram.png')
+                            a(href='https://www.youtube.com/channel/UCG71HL1WJ72ld1aoxp9HqTQ', target='_blank')
+                                img(src='https://img.icons8.com/wired/64/000000/youtube-play.png')
+                            a(href='https://www.facebook.com/48hfp.bruxelles/', target='_blank')
+                                img(src='https://img.icons8.com/wired/64/000000/facebook-f.png')
+    section#action.responsive
+        .vertical-center
+            .container
+                .row
+                    .action.take-tour
+                        .col-sm-7.wow.fadeInLeft(data-wow-duration='500ms', data-wow-delay='300ms')
+                            h1.title Pour trouver toute la documentation
+                            p Les règles, les documents de tournage à remplir, etc.
+                        .col-sm-5.text-center.wow.fadeInRight(data-wow-duration='500ms', data-wow-delay='300ms')
+                            .tour-button
+                                a.btn.btn-common(href='https://www.48hourfilm.com/bruxelles', target='_blank') Le site du 48HFP
+    // /#action
