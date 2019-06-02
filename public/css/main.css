@@ -113,13 +113,12 @@ font-family: 'Carrois Gothic SC', sans-serif; oui oui oui
   }
 
 
-  .btn-common:hover, 
-  .btn-common:focus{
+  .btn-common:hover {
     outline: none;
-    background: none;
     box-shadow: none;
-    color: #c27658;
-    border-color:#c27658;
+    background-color: #c27658;;
+    color: white;
+    border-color: #c27658;
   }
 
   .align-right{

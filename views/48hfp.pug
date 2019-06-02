@@ -20,31 +20,23 @@ block content
                     #myCarousel.carousel.slide(data-ride='carousel')
                         // Indicators
                         ol.carousel-indicators
-                            li.active(data-target='#myCarousel', data-slide-to='0')
-                            li(data-target='#myCarousel', data-slide-to='1')
-                            li(data-target='#myCarousel', data-slide-to='2')
-                            li(data-target='#myCarousel', data-slide-to='3')
+                            - var n = 0
+                            while n < 9
+                                if n === 0
+                                    li.active(data-target='#myCarousel', data-slide-to = String(n++))
+                                else
+                                    li(data-target='#myCarousel', data-slide-to = String(n++))
                         // Wrapper for slides
                         .carousel-inner
-                            .item.active
-                                img(src='/images/home/48HFP2.jpg', alt='4ème édition')
-                                .carousel-caption
-                                    //
-                                      <h3>Los Angeles</h3>
-                                      <p>LA is always so much fun!</p>
-                            .item
-                                img(src='/images/home/48HFP3.jpg', alt='Trophés de la 4ème édition')
-                                .carousel-caption
-                                    //
-                                      <h3>Chicago</h3>
-                                      <p>Thank you, Chicago!</p>
-                            .item
-                                img(src='/images/portfolio/48HFP_2018_Cérémonie2.jpg', alt='New York')
-                                .carousel-caption
-                                    //
-                                      <h3>New York</h3>
-                                      <p>We love the Big Apple!</p>
-                        // Left and right controls
+                            each image,index in public.imgs._contents
+                                if index === 0
+                                    .item.active
+                                        img(src=(directory + image))
+                                        .carousel-caption
+                                else
+                                    .item
+                                        img(src=(directory + image))
+                                        .carousel-caption
                         a.left.carousel-control(href='#myCarousel', data-slide='prev')
                             span.glyphicon.glyphicon-chevron-left
                             span.sr-only Previous
@@ -107,7 +99,7 @@ block content
                         p
                             a(href='https://giphy.com/gifs/love-jim-carrey-award-FGmbEOTVWQHzW')
                         p
-                        a(href='partenaire.html')
+                        a(href='/festivals/partenaire')
                             h3 Pour devenir partenaire, c'est par ici
                     .clients-logo.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='600ms')
                         .col-xs-3.col-sm-2
@@ -229,7 +221,7 @@ block content
                             |  On vous dévoile très vite les dates et les nouveautés de cette édition.
                             br
                             |  Pour ne rien manquer, inscrivez-vous à notre
-                            a(href='message.html') newsletter
+                            a(href='/contact') newsletter
                             |  et
                             br
                             |  soyez les premiers avertis du calendrier et de l’ouverture des inscriptions !
