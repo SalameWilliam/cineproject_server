@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('festivals', { title: 'Festivals' });
+    res.render('festivals', { title: 'Fédérer' });
 });
 
 router.get('/48hfp', function(req, res, next) {

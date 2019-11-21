@@ -1,0 +1,23 @@
+extends layout
+
+block beforeBody
+    - bodyclasses[2] = ["dropdown","active"]
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title Stages précédents
+                            p Photos et courts-métrages à découvrir
+    // /#page-breadcrumb
+    section#coming-soon
+        .container
+            .row
+                .col-sm-8.col-sm-offset-2
+                    .text-center.coming-content
+                        h1 Coming Soon
+                        h2 Vous découvrirez bientôt les photos et les courts-métrages créés lors de nos stages.
+    // /#action

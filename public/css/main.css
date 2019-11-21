@@ -881,6 +881,7 @@ h2 {
 }
 
 .clients-logo {
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -2895,4 +2896,13 @@ span.stButton_gradient,
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+}
+.flex_icons {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.hardcode{
+  width: 1370px;
 }
