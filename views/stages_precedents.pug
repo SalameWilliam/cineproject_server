@@ -13,6 +13,54 @@ block content
                             h1.title Stages précédents
                             p Photos et courts-métrages à découvrir
     // /#page-breadcrumb
+    section#company-information.padding.wow.fadeIn(data-wow-duration='1000ms', data-wow-delay='300ms')
+        .container
+            .row
+                .col-sm-6
+                    #myCarousel.carousel.slide(data-ride='carousel')
+                        // Indicators
+                        ol.carousel-indicators
+                            - var n = 0
+                            while n < 9
+                                if n === 0
+                                    li.active(data-target='#myCarousel', data-slide-to = String(n++))
+                                else
+                                    li(data-target='#myCarousel', data-slide-to = String(n++))
+                        // Wrapper for slides
+                        .carousel-inner
+                            each image,index in public.imgs._contents
+                                if index === 0
+                                    .item.active
+                                        img(src=(directory + image))
+                                        .carousel-caption
+                                else
+                                    .item
+                                        img(src=(directory + image))
+                                        .carousel-caption
+                        a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                            span.glyphicon.glyphicon-chevron-left
+                            span.sr-only Previous
+                        a.right.carousel-control(href='#myCarousel', data-slide='next')
+                            span.glyphicon.glyphicon-chevron-right
+                            span.sr-only Next
+                .col-sm-6
+                    br
+                    br
+                    br
+                        |
+                    h1 🎬 Stage cinéma août 2019 🎬
+                        |
+                    p 👏👏 Bravo aux cinéastes passionné.e.s pour leur créativité, leur investissement et leur magnifique travail 🙌
+                        |
+                    p C'était un bonheur et un honneur pour l'équipe de Cin&Project de participer à la création de votre premier court-métrage !
+    section#shortcodes
+        .container.flex_icons
+            #video-container
+                .row
+                    .col-md-6
+                        h2.page-header Teaser
+                        iframe(src='https://www.youtube.com/embed/4bzaxiqeiM8', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='', width='560', height='315', frameborder='0')
+            // /#video-container
     section#coming-soon
         .container
             .row
