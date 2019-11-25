@@ -23,15 +23,15 @@ router.get('/stages_precedents', function(req, res, next) {
             public: {
                 imgs: {
                     _contents:[
-                        "stage 1.jpg",
-                        "stage 2.jpg",
-                        "stage 3.jpg",
-                        "stage 4.jpg",
-                        "stage 5.jpg",
-                        "stage 6.jpg",
-                        "stage 7.jpg",
-                        "stage 8.jpg",
-                        "stage 9.jpg"
+                        "stage1.jpg",
+                        "stage2.jpg",
+                        "stage3.jpg",
+                        "stage4.jpg",
+                        "stage5.jpg",
+                        "stage6.jpg",
+                        "stage7.jpg",
+                        "stage8.jpg",
+                        "stage9.jpg"
                     ]
                 }
             }
