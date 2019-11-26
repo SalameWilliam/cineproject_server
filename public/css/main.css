@@ -2904,5 +2904,6 @@ span.stButton_gradient,
   align-items: flex-start;
 }
 .hardcode{
-  width: 1370px;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
